@@ -9,7 +9,7 @@ modify_cyber_dojo_owner() {
 }
 
 install_cyber_dojo_script() {
-    curl ${CYBER_DOJO_DOWNLOAD_URL} --output ${CYBER_DOJO_SCRIPT_PATH}
+    curl ${CYBER_DOJO_DOWNLOAD_URL}
     mv "./cyber-dojo" "${CYBER_DOJO_SCRIPT_PATH}"
     chmod 700 ${CYBER_DOJO_SCRIPT_PATH}
 }
