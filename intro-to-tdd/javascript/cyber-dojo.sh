@@ -2,6 +2,4 @@
 
 set -e
 
-cd ${CYBER_DOJO_SANDBOX}
-
-jest
+/usr/local/lib/node_modules/jest/bin/jest
