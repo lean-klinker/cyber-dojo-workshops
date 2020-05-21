@@ -1,6 +1,6 @@
 {
     "display_name": "Intro to TDD (JavaScript)",
-    "image_name": "leanklinker/cyber-dojo-node-jest",
+    "image_name": "leanklinker/cyber-dojo-node-jest:0.1.1",
     "visible_filenames": [
         "fizzbuzz.js",
         "fizzbuzz.spec.js",
