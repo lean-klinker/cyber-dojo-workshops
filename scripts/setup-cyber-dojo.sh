@@ -15,7 +15,7 @@ install_cyber_dojo_script() {
 }
 
 add_start_points() {
-    ${CYBER_DOJO_SCRIPT_PATH} start-point create klinker-custom --custom ${KLINKER_START_POINT_GITHUB_URL}
+    ${CYBER_DOJO_SCRIPT_PATH} start-point create ${CYBER_DOJO_CUSTOM_START_POINT_NAME} --custom ${CYBER_DOJO_CUSTOM_START_POINT_URL}
 }
 
 main() {
