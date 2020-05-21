@@ -1,0 +1,16 @@
+{
+    "display_name": "Intro to TDD (JavaScript)",
+    "image_name": "",
+    "visible_filenames": [
+        "fizzbuzz.js",
+        "fizzbuzz.spec.js",
+        "readme.txt"
+    ],
+    "filename_extension": [
+        ".js",
+        ".txt"
+    ],
+    "max_seconds": 100,
+    "tab_size": 4,
+    "hidden_filenames": []
+}
