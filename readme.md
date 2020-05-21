@@ -14,3 +14,8 @@ The order of the scripts is as follows:
 ## Running on AWS
 
 I was unable to run cyber-dojo on a `t2.micro` I had to upgrade the instance to a `t2.small`.
+
+## Resources
+
+[Adding a new Language + Test Framework](https://blog.cyber-dojo.org/2016/08/adding-new-language-and-unit-test.html)
+[Creating Own Starting Point](https://blog.cyber-dojo.org/2016/08/creating-your-own-start-points.html)
