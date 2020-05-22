@@ -1,8 +1,10 @@
 FROM cyberdojofoundation/javascript-node
 
-RUN npm install jest@26.0.1 @babel/preset-env@7.9.6 @babel/core@7.9.6 yarn --global
+RUN npm install yarn --global
 
 RUN yarn config set yarn-offline-mirror /npm-packages-offline-cache && \
     yarn config set yarn-offline-mirror-pruning true
+
+RUN yarn global add jest@26.0.1 @babel/preset-env@7.9.6 @babel/core@7.9.6
 
 COPY red_amber_green.rb /usr/local/bin
