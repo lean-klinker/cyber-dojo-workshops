@@ -7,7 +7,7 @@ build_custom_docker_images() {
 }
 
 create_cyber_dojo_directory() {
-    sudo mkdir -p ${CYBER_DOJO_ROOT_PATH}
+    sudo mkdir -p /cyber-dojo
 }
 
 modify_cyber_dojo_owner() {
