@@ -10,7 +10,6 @@ The order of the scripts is as follows:
     1. Logout and log back in once docker has been installed.
     1. The script will add your user to the docker group
 1. `./scripts/setup-bash-profile.sh`
-1. `./scripts/setup-cyber-dojo.sh`
 1. `./scripts/start-cyber-dojo.sh`
 
 ## Running on AWS

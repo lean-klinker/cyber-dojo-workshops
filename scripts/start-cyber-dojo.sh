@@ -2,11 +2,20 @@
 
 set -ex
 
-stop() {
-    ${CYBER_DOJO_SCRIPT_PATH} down
+setup_environment_variables() {
+    if [ -z "${CYBER_DOJO_SCRIPT_PATH}" ]; then 
+        /bin/bash ./scripts/setup-bash-profile.sh
+        source ~/.bashrc
+    fi
 }
 
-setup() {
+stop() {
+    if [ hash ${CYBER_DOJO_SCRIPT_PATH} ]; then
+        ${CYBER_DOJO_SCRIPT_PATH} down
+    fi
+}
+
+setup_cyber_dojo() {
     /bin/bash ./scripts/setup-cyber-dojo.sh
 }
 
@@ -15,8 +24,9 @@ start() {
 }
 
 main() {
+    setup_environment_variables
     stop
-    setup
+    setup_cyber_dojo
     start
 }
 
