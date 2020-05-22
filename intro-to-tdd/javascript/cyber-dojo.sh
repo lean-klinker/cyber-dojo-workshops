@@ -6,4 +6,5 @@ NODE_VERSION=14.1.0
 
 n use ${NODE_VERSION}
 
-ls -la ..
+npm-install-offline install --repo /usr/local/lib/node_modules
+npm test
