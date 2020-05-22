@@ -1,15 +1,15 @@
 {
     "display_name": "Intro to TDD (JavaScript)",
-    "image_name": "leanklinker/cyber-dojo-node-jest:0.1.1",
+    "image_name": "leanklinker/cyber-dojo-node-jest",
     "visible_filenames": [
         "fizzbuzz.js",
         "fizzbuzz.spec.js",
         "readme.txt",
-        "cyber-dojo.sh"
+        "cyber-dojo.sh",
+        "babel.config.js"
     ],
     "filename_extension": [
-        ".js",
-        ".txt"
+        ".js"
     ],
     "max_seconds": 20,
     "tab_size": 4,

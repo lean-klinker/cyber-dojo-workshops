@@ -2,4 +2,7 @@
 
 set -e
 
-/usr/local/lib/node_modules/jest/bin/jest
+NODE_VERSION=14.1.0
+
+n use ${NODE_VERSION} \
+    /usr/local/lib/node_modules/jest/bin/jest --ci --config=./babel.config.js
