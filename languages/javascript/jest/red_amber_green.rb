@@ -6,5 +6,4 @@ lambda { |stdout,stderr,status|
     else
       :amber
     end
-    return :red
   }
