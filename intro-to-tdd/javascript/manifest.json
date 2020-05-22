@@ -6,10 +6,12 @@
         "fizzbuzz.spec.js",
         "readme.txt",
         "cyber-dojo.sh",
-        "babel.config.js"
+        "babel.config.js",
+        "package.json"
     ],
     "filename_extension": [
-        ".js"
+        ".js",
+        ".json"
     ],
     "max_seconds": 20,
     "tab_size": 4,

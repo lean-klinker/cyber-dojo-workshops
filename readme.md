@@ -2,6 +2,8 @@
 
 The scripts found in the `scripts` folder will setup cyber dojo on an Ubuntu server.
 
+**IMPORTANT**: All scripts are intended to be run at the root of this repository. The scripts use paths that are relative to the root.
+
 The order of the scripts is as follows:
 
 1. `./scripts/setup-docker.sh`
