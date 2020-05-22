@@ -25,6 +25,7 @@ add_start_points() {
 }
 
 main() {
+    source ~/.bashrc
     build_custom_docker_images
     create_cyber_dojo_directory
     modify_cyber_dojo_owner
