@@ -5,7 +5,8 @@ set -ex
 build_image() {
     image_name=${1}
     docker_file_path=${2}
-
+    
+    docker rmi "${image_name}:latest"
     docker build -t "${image_name}:latest" ${docker_file_path}
 }
 
