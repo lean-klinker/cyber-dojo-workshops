@@ -7,8 +7,7 @@
         "readme.txt",
         "cyber-dojo.sh",
         "babel.config.js",
-        "package.json",
-        "yarn.lock"
+        "package.json"
     ],
     "filename_extension": [
         ".js",
@@ -19,6 +18,6 @@
     "max_seconds": 20,
     "tab_size": 4,
     "hidden_filenames": [
-
+        "yarn.lock"
     ]
 }
