@@ -13,7 +13,7 @@ create_cyber_dojo_directory() {
 }
 
 modify_cyber_dojo_owner() {
-    sudo chown ${CYBER_DOJO_SAVER_SERVICE_USER_ID}:${CYBER_DOJO_SAVER_SERVICE_GROUP_ID} ${CYBER_DOJO_ROOT_PATH}
+    sudo chown ${CYBER_DOJO_SAVER_SERVICE_USER_ID}:${CYBER_DOJO_SAVER_SERVICE_GROUP_ID} /cyber-dojo
 }
 
 install_cyber_dojo_script() {

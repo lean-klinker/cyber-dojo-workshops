@@ -21,13 +21,14 @@ install_docker() {
 }
 
 update_docker_storage_settings() {
-    touch /etc/docker/daemon.json
-    echo "{" >> /etc/docker/daemon.json
-    echo "\"storage-driver\": \"devicemapper\"," >> /etc/docker/daemon.json
-    echo "\"storage-opts\": [" >> /etc/docker/daemon.json
-    echo "    \"dm.basesize=20G\"" >> /etc/docker/daemon.json
-    echo "]" >> /etc/docker/daemon.json
-    echo "}" >> /etc/docker/daemon.json
+    sudo touch /etc/docker/daemon.json
+
+    sudo echo "{" >> /etc/docker/daemon.json
+    sudo echo "\"storage-driver\": \"devicemapper\"," >> /etc/docker/daemon.json
+    sudo echo "\"storage-opts\": [" >> /etc/docker/daemon.json
+    sudo echo "    \"dm.basesize=20G\"" >> /etc/docker/daemon.json
+    sudo echo "]" >> /etc/docker/daemon.json
+    sudo echo "}" >> /etc/docker/daemon.json
 
     sudo systemctl restart docker
 }
