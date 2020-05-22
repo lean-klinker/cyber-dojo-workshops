@@ -1,5 +1,11 @@
 #!/bin/bash
 
+set -ex
+
+build_custom_docker_images() {
+    /bin/bash "./scripts/build-docker-images.sh"
+}
+
 create_cyber_dojo_directory() {
     sudo mkdir -p ${CYBER_DOJO_ROOT_PATH}
 }
@@ -19,6 +25,7 @@ add_start_points() {
 }
 
 main() {
+    build_custom_docker_images
     create_cyber_dojo_directory
     modify_cyber_dojo_owner
     install_cyber_dojo_script

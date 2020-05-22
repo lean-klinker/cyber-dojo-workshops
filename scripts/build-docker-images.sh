@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -ex
+
 build_image() {
     image_name=${1}
     docker_file_path=${2}

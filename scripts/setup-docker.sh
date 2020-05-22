@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 install_dependencies() {
     sudo apt update
     sudo apt upgrade

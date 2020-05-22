@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 append_environment_variables_to_bash_profile() {
     echo "# Start Cyber Dojo" >> ~/.bashrc
     echo "export CYBER_DOJO_ROOT_PATH=\"/cyber-dojo\"" >> ~/.bashrc
