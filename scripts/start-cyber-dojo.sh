@@ -10,7 +10,7 @@ setup_environment_variables() {
 }
 
 stop() {
-    if [ hash ${CYBER_DOJO_SCRIPT_PATH} ]; then
+    if [ test -f "${CYBER_DOJO_SCRIPT_PATH}" ]; then
         ${CYBER_DOJO_SCRIPT_PATH} down
     fi
 }
