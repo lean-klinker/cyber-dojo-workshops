@@ -7,11 +7,14 @@
         "readme.txt",
         "cyber-dojo.sh",
         "babel.config.js",
-        "package.json"
+        "package.json",
+        "yarn.lock"
     ],
     "filename_extension": [
         ".js",
-        ".json"
+        ".json",
+        ".lock",
+        ".txt"
     ],
     "max_seconds": 20,
     "tab_size": 4,
