@@ -6,7 +6,9 @@ build_image() {
     image_name=${1}
     docker_file_path=${2}
     
-    docker rmi "${image_name}:latest"
+    if [[ "$(docker images -q ${image_name}:latest 2> /dev/null)" == "" ]]; then 
+        docker rmi "${image_name}:latest"
+    fi
     docker build -t "${image_name}:latest" ${docker_file_path}
 }
 
