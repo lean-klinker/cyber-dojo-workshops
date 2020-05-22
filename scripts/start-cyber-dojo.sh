@@ -2,6 +2,8 @@
 
 set -ex
 
+source ~/.bashrc
+
 setup_environment_variables() {
     if [ -z "${CYBER_DOJO_SCRIPT_PATH}" ]; then 
         /bin/bash ./scripts/setup-bash-profile.sh

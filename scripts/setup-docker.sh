@@ -2,6 +2,8 @@
 
 set -ex
 
+source ~/.bashrc
+
 install_dependencies() {
     sudo apt update
     sudo apt upgrade

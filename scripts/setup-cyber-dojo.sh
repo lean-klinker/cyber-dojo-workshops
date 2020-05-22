@@ -2,6 +2,8 @@
 
 set -ex
 
+source ~/.bashrc
+
 build_custom_docker_images() {
     /bin/bash "./scripts/build-docker-images.sh"
 }
@@ -25,7 +27,6 @@ add_start_points() {
 }
 
 main() {
-    source ~/.bashrc
     build_custom_docker_images
     create_cyber_dojo_directory
     modify_cyber_dojo_owner
