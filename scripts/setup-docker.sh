@@ -20,6 +20,18 @@ install_docker() {
     sudo apt install docker-ce
 }
 
+update_docker_storage_settings() {
+    touch /etc/docker/daemon.json
+    echo "{" >> /etc/docker/daemon.json
+    echo "\"storage-driver\": \"devicemapper\"," >> /etc/docker/daemon.json
+    echo "\"storage-opts\": [" >> /etc/docker/daemon.json
+    echo "    \"dm.basesize=20G\"" >> /etc/docker/daemon.json
+    echo "]" >> /etc/docker/daemon.json
+    echo "}" >> /etc/docker/daemon.json
+
+    sudo systemctl restart docker
+}
+
 enable_current_user_to_run_docker_without_sudo() {
     sudo usermod -aG docker ${USER}
 
@@ -30,6 +42,7 @@ main() {
     install_dependencies
     add_docker_repository
     install_docker
+    update_docker_storage_settings
     enable_current_user_to_run_docker_without_sudo
 }
 
