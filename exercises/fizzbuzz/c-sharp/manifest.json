@@ -1,0 +1,16 @@
+{
+    "display_name": "FizzBuzz (C-Sharp)",
+    "image_name": "leanklinker/cyber-dojo-c-sharp-xunit",
+    "visible_filenames": [
+        "FizzBuzzCalculator.cs",
+        "FizzBuzzCalculatorTest.cs",
+        "readme.txt",
+        "cyber-dojo.sh"
+    ],
+    "filename_extension": [
+        ".cs",
+        ".txt"
+    ],
+    "max_seconds": 20,
+    "tab_size": 4
+}
