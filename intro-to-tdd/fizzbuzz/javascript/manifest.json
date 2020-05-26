@@ -1,0 +1,23 @@
+{
+    "display_name": "FizzBuzz (JavaScript)",
+    "image_name": "leanklinker/cyber-dojo-javascript-jest",
+    "visible_filenames": [
+        "fizzbuzz.js",
+        "fizzbuzz.spec.js",
+        "readme.txt",
+        "cyber-dojo.sh",
+        "babel.config.js",
+        "package.json"
+    ],
+    "filename_extension": [
+        ".js",
+        ".json",
+        ".lock",
+        ".txt"
+    ],
+    "max_seconds": 20,
+    "tab_size": 4,
+    "hidden_filenames": [
+        "yarn.lock"
+    ]
+}
