@@ -2,6 +2,6 @@ FROM leanklinker/cyber-dojo-c-sharp:latest
 
 COPY xunit-packages.csproj .
 
-RUN dotnet restore xunit-pacakges.csproj
+RUN dotnet restore xunit-packages.csproj
 
 COPY red_amber_green.rb /usr/local/bin
