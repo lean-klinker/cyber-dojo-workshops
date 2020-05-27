@@ -1,0 +1,7 @@
+FROM gradle:6.4.1-jdk8
+
+COPY build.gradle .
+
+RUN gradle build
+
+COPY red_amber_green.rb .
