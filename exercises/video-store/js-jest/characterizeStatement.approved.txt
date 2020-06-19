@@ -1,0 +1,49 @@
+[new,1] => Rental Record for undefined
+	Happy Gilmore	3
+Amount owed is 3
+You earned 1 frequent renter points
+[new,2] => Rental Record for undefined
+	Happy Gilmore	6
+Amount owed is 6
+You earned 1 frequent renter points
+[new,3] => Rental Record for undefined
+	Happy Gilmore	9
+Amount owed is 9
+You earned 2 frequent renter points
+[new,4] => Rental Record for undefined
+	Happy Gilmore	12
+Amount owed is 12
+You earned 2 frequent renter points
+[regular,1] => Rental Record for undefined
+	Happy Gilmore	2
+Amount owed is 2
+You earned 1 frequent renter points
+[regular,2] => Rental Record for undefined
+	Happy Gilmore	2
+Amount owed is 2
+You earned 1 frequent renter points
+[regular,3] => Rental Record for undefined
+	Happy Gilmore	3.5
+Amount owed is 3.5
+You earned 1 frequent renter points
+[regular,4] => Rental Record for undefined
+	Happy Gilmore	5
+Amount owed is 5
+You earned 1 frequent renter points
+[childrens,1] => Rental Record for undefined
+	Happy Gilmore	1.5
+Amount owed is 1.5
+You earned 1 frequent renter points
+[childrens,2] => Rental Record for undefined
+	Happy Gilmore	1.5
+Amount owed is 1.5
+You earned 1 frequent renter points
+[childrens,3] => Rental Record for undefined
+	Happy Gilmore	1.5
+Amount owed is 1.5
+You earned 1 frequent renter points
+[childrens,4] => Rental Record for undefined
+	Happy Gilmore	3
+Amount owed is 3
+You earned 1 frequent renter points
+
