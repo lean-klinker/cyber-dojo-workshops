@@ -1,5 +1,5 @@
 FROM cyberdojofoundation/javascript-node
 
-RUN npm install jest@26.0.1 @babel/preset-env@7.9.6 @babel/core@7.9.6 --global
+RUN npm install jest@25.5.4 @babel/preset-env@7.9.6 @babel/core@7.9.6 approvals@3.0.5 --global
 
 COPY red_amber_green.rb /usr/local/bin

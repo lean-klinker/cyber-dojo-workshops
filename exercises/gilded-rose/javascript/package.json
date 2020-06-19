@@ -3,8 +3,9 @@
         "test": "jest --ci"
     },
     "dependencies": {
+        "approvals": "3.0.5",
         "jest": "25.5.4",
-        "@babel/core":"7.9.6",
+        "@babel/core": "7.9.6",
         "@babel/preset-env": "7.9.6"
     }
 }
