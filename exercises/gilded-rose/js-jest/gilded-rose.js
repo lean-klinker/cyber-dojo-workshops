@@ -1,5 +1,5 @@
 export class GildedRose {
-    constructor(items=[]) {
+    constructor(items) {
         this.items = items;
     }
 

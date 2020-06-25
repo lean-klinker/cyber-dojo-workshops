@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "test": "jest --ci"
+        "test": "jest --ci --coverage"
     },
     "dependencies": {
         "approvals": "3.0.5",
