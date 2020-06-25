@@ -18,7 +18,6 @@ main() {
     build_image "leanklinker/cyber-dojo-javascript-jest" "./languages/javascript/jest"
     build_image "leanklinker/cyber-dojo-c-sharp" "./languages/c-sharp"
     build_image "leanklinker/cyber-dojo-c-sharp-xunit" "./languages/c-sharp/xunit"
-    build_image "leanklinker/cyber-dojo-java-gradle" "./languages/java/gradle"
 }
 
 main
