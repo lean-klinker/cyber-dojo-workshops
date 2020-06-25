@@ -1,5 +1,28 @@
 FROM cyberdojofoundation/javascript-node
 
-RUN npm install jest@25.5.4 @babel/preset-env@7.9.6 @babel/core@7.9.6 approvals@3.0.5 --global
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# START of extra commands to fulfil runner's requirements (os=Ubuntu)
+RUN (getent group sandbox) || (addgroup --gid 51966 sandbox)
+RUN (grep -q sandbox:x:41966 /etc/passwd) || (adduser --disabled-password --gecos "" --home /home/sandbox --ingroup sandbox --shell /bin/bash --uid 41966 sandbox)
+RUN apt-get update && apt-get install --yes coreutils bash tar file
+# END of extra commands to fulfil runner's requirements
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+RUN adduser \
+    --disabled-password \
+    --gecos "" \
+    --ingroup sandbox \
+    --home /home/jest \
+    jest
+
+COPY package.json /home/jest
+RUN chown jest /home/jest/package.json
+WORKDIR /home/jest
+
+USER jest
+RUN npm install
+
+USER root
+RUN ln -s /home/jest/node_modules /home/sandbox/node_modules
 
 COPY red_amber_green.rb /usr/local/bin
