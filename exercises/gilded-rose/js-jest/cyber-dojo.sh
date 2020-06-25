@@ -2,9 +2,6 @@
 
 set -e
 
-NODE_VERSION=14.1.0
+ln -s /home/jest/node_modules ${CYBER_DOJO_SANDBOX}/node_modules
 
-cd ~/node_modules/.bin
-export NODE_PATH=/home/sandbox/node_modules
-
-n use ${NODE_VERSION} ./node_modules/.bin/jest --ci --coverage
+npm test

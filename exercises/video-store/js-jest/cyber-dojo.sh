@@ -2,6 +2,6 @@
 
 set -e
 
-NODE_VERSION=14.1.0
+ln -s /home/jest/node_modules ${CYBER_DOJO_SANDBOX}/node_modules
 
-n use ${NODE_VERSION} npm test
+npm test
