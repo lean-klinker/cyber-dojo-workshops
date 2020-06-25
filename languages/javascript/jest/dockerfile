@@ -20,6 +20,8 @@ RUN chown jest /home/jest/package.json
 WORKDIR /home/jest
 
 USER jest
+# reinstall npm. See https://github.com/npm/npm/issues/14232
+RUN rm -rf /usr/local/lib/node_modules/npm
 RUN npm install
 
 USER root
