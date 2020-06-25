@@ -22,7 +22,7 @@ test('characterize update quality', () => {
     let result = '';
     for (let i = 0; i < 30; i++) {
         gildedRose.updateQuality();
-        result += `${JSON.stringify(gildedRose.items)}\r`
+        result += `${JSON.stringify(gildedRose.items)}\n`
     }
 
     approvals.verify(__dirname, 'gildedRose', result);

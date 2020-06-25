@@ -8,7 +8,7 @@ test('characterizeStatement', () => {
 
     for (let movieType of movieTypes) {
         for (let daysRented of rentalDays) {
-            results += `[${movieType},${daysRented}] => ${generateStatement(movieType, daysRented)}\r`;
+            results += `[${movieType},${daysRented}] => ${generateStatement(movieType, daysRented)}\n`;
         }
     }
 
