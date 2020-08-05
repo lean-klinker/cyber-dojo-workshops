@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "test": "jest --ci"
+    },
+    "dependencies": {
+        "jest": "25.5.4",
+        "@babel/core":"7.9.6",
+        "@babel/preset-env": "7.9.6"
+    }
+}

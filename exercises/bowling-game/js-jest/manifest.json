@@ -1,0 +1,23 @@
+{
+    "display_name": "Bowling Game (JS-Jest)",
+    "image_name": "leanklinker/cyber-dojo-javascript-jest",
+    "visible_filenames": [
+        "bowling-game.js",
+        "bowling-game.spec.js",
+        "readme.txt",
+        "cyber-dojo.sh",
+        "babel.config.js",
+        "package.json"
+    ],
+    "filename_extension": [
+        ".js",
+        ".json",
+        ".lock",
+        ".txt"
+    ],
+    "max_seconds": 20,
+    "tab_size": 4,
+    "hidden_filenames": [
+        "yarn.lock"
+    ]
+}
